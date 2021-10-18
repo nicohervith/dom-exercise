@@ -141,3 +141,20 @@ Con el sticky la cabecera queda fija incluso scrolleando hacia abajo
   color: var(--second-color);
   background-color: var(--main-modal-color);
 }
+
+/* Eventos del Teclado */
+
+.stage {
+  display: flex;
+  min-height: 50vh;
+  background-color: var(--second-color);
+}
+
+/* Le doy a la bola el mismo alto y ancho pero border-radius para redondearla y que parezca una bola*/
+.ball {
+  margin: auto;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: var(--main-color);
+}
