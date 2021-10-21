@@ -54,12 +54,12 @@ export function moveBall (e,ball,stage){
 
 export function shorcuts(e ) {
   
-  console.log(e.keycode);
+  /*console.log(e.keycode);
   console.log(e.shiftKEy)
   console.log(`alt: ${e.altKey}`)
   console.log(`ctrl: ${e.ctrlKey}`);
   console.log(`shift: ${e.shiftKey}`);
-  console.log(e);
+  console.log(e);*/
 
 
   //Crear shorcuts
