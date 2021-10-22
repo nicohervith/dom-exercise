@@ -7,6 +7,7 @@ import scrollTopButton from "./dom/btn_scroll.js";
 import darkTheme from "./dom/dark_theme.js";
 import responsiveMedia from "./dom/obj_responsive.js";
 import ResponsiveTester from "./dom/prueba_responsive.js";
+import userDeviceInfo from "./dom/detection_devices.js";
 
 
 const d=document;
@@ -33,6 +34,7 @@ d.addEventListener("DOMContentLoaded", (e)=>{
    );
 
    ResponsiveTester("responsive-tester");
+   userDeviceInfo("user-device")
 
 })
 
