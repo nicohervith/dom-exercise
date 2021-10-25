@@ -1,7 +1,4 @@
-
-/*
-AÑADO FUENTE, TAMAÑO, COLOR, ETC
-*/
+/* **********     Reset CSS     ********** */
 :root {
   --main-font: sans-serif;
   --font-size: 16px;
@@ -12,10 +9,6 @@ AÑADO FUENTE, TAMAÑO, COLOR, ETC
   --container-width: 1200px;
 }
 
-/*
-añado tamaño de caja, fuente y tamaño de la fuente
-scroll-behavior me permite un suavizado en el scroll
-*/
 html {
   box-sizing: border-box;
   font-family: var(--main-font);
@@ -29,21 +22,25 @@ html {
   box-sizing: inherit;
 }
 
-
-/*
-overflow-x Todo lo que se desborde en el horizontal se oculta y no muestra barra de desplazamiento
-*/
 body {
   margin: 0;
   overflow-x: hidden;
 }
 
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.flex-row-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* **********     menu-hamburguesa     ********** */
 
-/*
-Con el sticky la cabecera queda fija incluso scrolleando hacia abajo
-*/
 .header {
   position: sticky;
   z-index: 997;
@@ -70,27 +67,31 @@ Con el sticky la cabecera queda fija incluso scrolleando hacia abajo
 }
 
 .panel {
-  position:fixed;
-   /* El z-index 998 me permite posicionar esa interfaz por debajo del boton que contiene el z-index 999*/
+  position: fixed;
   z-index: 998;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
   background-color: var(--second-modal-color);
+  opacity: 0;
+  visibility: hidden;
   transition: transform 0.3s ease, opacity 0.5s ease;
- /*Hacia arriba*/
-  transform: translate(0,-100%);
+  /* De arriba */
+  transform: translate(0, -100%);
+  /* De abajo */
+ /* transform: translate(0, 100%); */
+  /* De la derecha */
+ /* transform: translate(100%, 0);*/
+  /* De la izquierda */
+ /* transform: translate(-100%, 0);*/
   
-  /*
-  /* De abajo 
-  transform: translate(0, 100%);
-  /* De la derecha 
-  transform: translate(100%, 0);
-  /* De la izquierda 
-  transform: translate(-100%, 0);  
-  */
 }
 
 .panel.is-active {
@@ -98,7 +99,6 @@ Con el sticky la cabecera queda fija incluso scrolleando hacia abajo
   opacity: 1;
   visibility: visible;
 }
-
 
 .panel-btn {
   position: fixed;
@@ -115,12 +115,10 @@ Con el sticky la cabecera queda fija incluso scrolleando hacia abajo
   background-color: var(--main-color);
 }
 
-
 .menu {
   width: inherit;
   display: flex;
   flex-direction: column;
-  /* Le da espacio proporcional entre los eventos y las orillas*/
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
