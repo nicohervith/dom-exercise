@@ -11,6 +11,7 @@ import userDeviceInfo from "./dom/detection_devices.js";
 import networkStatus from "./dom/red_detection.js";
 import webCam from "./dom/webcam_detection.js";
 import getGeolocation from "./dom/geolocation.js";
+import searchFilters from "./dom/search_filter.js";
 
 
 
@@ -41,6 +42,7 @@ d.addEventListener("DOMContentLoaded", (e)=>{
    userDeviceInfo("user-device");
    webCam("web-cam");
    getGeolocation("geolocation");
+   searchFilters(".card-filter", ".card")
 
 })
 
