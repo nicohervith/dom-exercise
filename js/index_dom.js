@@ -12,6 +12,7 @@ import networkStatus from "./dom/red_detection.js";
 import webCam from "./dom/webcam_detection.js";
 import getGeolocation from "./dom/geolocation.js";
 import searchFilters from "./dom/search_filter.js";
+import draw from "./dom/sorteo.js";
 
 
 
@@ -42,7 +43,8 @@ d.addEventListener("DOMContentLoaded", (e)=>{
    userDeviceInfo("user-device");
    webCam("web-cam");
    getGeolocation("geolocation");
-   searchFilters(".card-filter", ".card")
+   searchFilters(".card-filter", ".card");
+   draw("#winner-btn", ".player")
 
 })
 
