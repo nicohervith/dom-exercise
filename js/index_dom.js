@@ -14,6 +14,7 @@ import getGeolocation from "./dom/geolocation.js";
 import searchFilters from "./dom/search_filter.js";
 import draw from "./dom/sorteo.js";
 import slider from "./dom/carrusel.js";
+import scrollSpy from "./dom/scroll_spy.js";
 
 
 
@@ -47,6 +48,7 @@ d.addEventListener("DOMContentLoaded", (e)=>{
    searchFilters(".card-filter", ".card");
    draw("#winner-btn", ".player")
    slider()
+   scrollSpy()
 
 })
 
