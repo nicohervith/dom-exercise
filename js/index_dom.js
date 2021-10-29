@@ -16,6 +16,7 @@ import draw from "./dom/sorteo.js";
 import slider from "./dom/carrusel.js";
 import scrollSpy from "./dom/scroll_spy.js";
 import smartVideo from "./dom/smart_video.js";
+import contactFormValidations from "./dom/validaciones_form.js";
 
 
 
@@ -50,7 +51,8 @@ d.addEventListener("DOMContentLoaded", (e)=>{
    draw("#winner-btn", ".player")
    slider()
    scrollSpy()
-   smartVideo()
+   smartVideo();
+   contactFormValidations()
 
 })
 
