@@ -5,7 +5,7 @@ export default function contactFormValidations(){
   $inputs = d.querySelectorAll(".contact-form [required]");
 
 //Me detecta los 3 inputs + el textarea que tienen el elemento required
-  console.log($inputs)
+  //console.log($inputs)
 
   $inputs.forEach(input=>{
     const $span = d.createElement("span");

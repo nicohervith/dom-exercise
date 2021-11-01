@@ -17,6 +17,7 @@ import slider from "./dom/carrusel.js";
 import scrollSpy from "./dom/scroll_spy.js";
 import smartVideo from "./dom/smart_video.js";
 import contactFormValidations from "./dom/validaciones_form.js";
+import speechReader from "./dom/narrador.js";
 
 
 
@@ -53,6 +54,7 @@ d.addEventListener("DOMContentLoaded", (e)=>{
    scrollSpy()
    smartVideo();
    contactFormValidations()
+  
 
 })
 
@@ -64,3 +66,5 @@ d.addEventListener("keydown", (e) =>{
 darkTheme(".dark-theme-btn", "dark-mode");
 
 networkStatus();
+
+speechReader();
